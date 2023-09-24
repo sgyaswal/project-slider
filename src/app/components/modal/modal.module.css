@@ -1,0 +1,64 @@
+.modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  z-index: 1000;
+}
+
+.modalContent {
+  background-color: #fff; /* Background color for the right half */
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  max-width: 100%;  
+  width: 37%;
+  height: 100%;
+}
+
+.closeButton {
+  font-size: 18px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+}
+
+/* Your existing styles for headings and data */
+.heading {
+  font-size: 16px;
+  text-align: left;
+  margin: 0;
+  font-weight: 400;
+  font-size: x-large;
+  width: 100%;
+  margin-top: 35px;
+}
+
+.headingData {
+  width: 100%;
+  font-weight: 300;
+  font-size: larger;
+  margin: 0px;
+  margin-top: 20px;
+}
+
+.modalData{
+  padding: 4px;
+  padding-top: 20%;
+  padding-left: 40px;
+}
+
+.heading::before {
+  content: "\25A6"; 
+  margin-right: 10px; 
+  color: #000000; 
+}

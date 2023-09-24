@@ -1,0 +1,80 @@
+.card {
+    width: 100%; 
+    max-width: 300px; 
+    background-color: #dfdddd;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    transition: transform 0.2s;
+  }
+  
+  .card:hover {
+    transform: scale(1.02);
+  }
+  
+
+  .heading{
+    font-size: 16px;
+    text-align: left;
+    margin: 0;
+    font-weight:400;
+    font-size: large;
+    width: 100%;
+    margin-top: 15px;
+  }
+
+  .headingData{
+    width: 100%;
+    font-weight:300;
+    font-size: medium;
+    margin: 0px;
+  }
+
+  .headingData1{
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+
+  .headingTitle{
+    width: 100%;
+    font-weight: bold;
+    font-size:larger;
+    margin: 0;
+  }
+  
+
+  
+  /* Center the card content vertically and horizontally */
+  .cardContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
+  
+  /* Add a subtle gradient background */
+  .cardBackground {
+    background: linear-gradient(45deg, #f3f3f3, #ffffff);
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Responsive design */
+  @media screen and (min-width: 768px) {
+    .card {
+      width: calc(50% - 40px); /* Show 2 cards in one row on medium screens */
+    }
+  }
+  
+  @media screen and (min-width: 992px) {
+    .card {
+      max-width: 300px; /* Limit width on larger screens */
+    }
+  }
+  
