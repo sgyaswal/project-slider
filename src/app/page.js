@@ -36,7 +36,7 @@ export default function Home() {
     formData.append("excel_file", selectedFile);
 
     try {
-      const response = await fetch("https://65.0.97.103/api/excel-data", {
+      const response = await fetch("http://65.0.97.103/api/excel-data", {
         method: "POST",
         body: formData,
       });
@@ -100,7 +100,7 @@ export default function Home() {
   const deleteData = async () => {
     try {
       const response = await fetch(
-        "https://65.0.97.103/api/delete-projects",
+        "http://65.0.97.103/api/delete-projects",
         {
           method: "POST",
           headers: {
@@ -125,7 +125,7 @@ export default function Home() {
   };
 
   const getProjects = async () => {
-    const apiUrl = "https://65.0.97.103/api/get-projects";
+    const apiUrl = "http://65.0.97.103/api/get-projects";
 
     try {
       const response = await fetch(apiUrl);
